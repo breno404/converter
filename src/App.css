@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.row {
+  width: 100%;
+  padding: 1rem;
+}
+
+.block {
+  display: block;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.col-3 {
+  grid-template-columns: 1fr;
+}
+
+.btn-converter-mode {
+  padding: 2rem 2rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.btn-converter-submit {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.6rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.label {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.75px;
+}
+
+.input {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  outline: none;
+  letter-spacing: 0.75px;
+  vertical-align: middle;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.my-auto {
+  margin: auto 0;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    width: 640px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
